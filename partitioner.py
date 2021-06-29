@@ -26,7 +26,7 @@ def execute(partition_size,
     partitions = []
     start = date_begin
 
-    while start < date_end:
+    while start <= date_end:
         # Делаем шаг размером в месяц, если месяц
         if partition_size == 'month':
             timedelta = day * start.days_in_month
